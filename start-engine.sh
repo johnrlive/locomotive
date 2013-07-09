@@ -39,6 +39,7 @@ git clone git://github.com/johnrlive/vim-config.git
 cd vim-config
 rake
 echo '[###### cloned vim config ######]'
+sleep 1
 
 echo "\n Choo-Choo\n"
 
