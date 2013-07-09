@@ -1,6 +1,6 @@
-# Ask if you want to build Ruby or install RVM
+# Ask what operating system?
   echo -e "\n"
-  echo "What OS are you using?"
+  echo "What OS are you installing locomotive script on?"
   echo "=> 1. Ubuntu"
   echo "=> 2. OSX"
   echo -n "Select your OS type [1 or 2]? "
