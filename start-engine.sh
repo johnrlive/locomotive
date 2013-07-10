@@ -32,6 +32,12 @@ sudo apt-get install -y mc
 echo "[###### Done ######]"
 sleep 1
 
+echo '[###### Reloading bash ######]'
+sleep 1
+. ~/.bash_profile
+echo "[###### Done ######]"
+sleep 1
+
 echo '[###### install vim-config #####]'
 sleep 1
 cd ~
@@ -39,6 +45,14 @@ git clone git://github.com/johnrlive/vim-config.git
 cd vim-config
 rake
 echo '[###### cloned vim config ######]'
+sleep 1
+
+echo '[###### Installed #######]'
+sleep 1
+rvm -v
+ruby -v
+rails -v
+echo "[###### Done ######]"
 sleep 1
 
 echo "\n Choo-Choo\n"
