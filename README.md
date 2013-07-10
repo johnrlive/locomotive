@@ -5,4 +5,4 @@
 ###To Complete vim Installation
 Type:
   * `vim`
-  * when in vim type: `:BundleInstall`
+  * then in vim type: `:BundleInstall`
