@@ -41,7 +41,7 @@ sleep 1
 echo '[###### install vim-config #####]'
 sleep 1
 cd ~
-git clone git://github.com/johnrlive/vim-config.git
+git clone git://github.com/johnrlive/vim-config-neo.git
 cd vim-config
 rake
 echo '[###### cloned vim config ######]'
