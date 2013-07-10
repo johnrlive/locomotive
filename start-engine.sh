@@ -29,6 +29,7 @@ echo '[###### Install utility tool ######]'
 sleep 1
 sudo apt-get install -y vim
 sudo apt-get install -y mc
+sudo apt-get install -y tmux
 echo "[###### Done ######]"
 sleep 1
 
