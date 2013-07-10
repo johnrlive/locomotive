@@ -38,21 +38,22 @@ sleep 1
 echo "[###### Done ######]"
 sleep 1
 
-echo '[###### install vim-config #####]'
-sleep 1
-cd ~
-git clone git://github.com/johnrlive/vim-config-neo.git
-cd vim-config
-rake
-echo '[###### cloned vim config ######]'
-sleep 1
-
 echo '[###### Installed #######]'
 sleep 1
 rvm -v
 ruby -v
 rails -v
+gem -v
 echo "[###### Done ######]"
+sleep 1
+
+echo '[###### install vim-config #####]'
+sleep 1
+cd ~
+git clone git://github.com/johnrlive/vim-config-neo.git
+cd vim-config-neo
+rake
+echo '[###### cloned vim config ######]'
 sleep 1
 
 echo "\n Choo-Choo\n"
