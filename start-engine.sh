@@ -67,7 +67,7 @@ echo '[##### install Oh-my-zsh ######]'
 sleep 1
 cd ~
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-wget https://github.com/johnrlive/dotfiles/blob/master/install/zshrc.zsh-template
+wget --no-check-certificate https://github.com/johnrlive/dotfiles/blob/master/install/zshrc.zsh-template
 cp ~/zshrc.zsh-template ~/.zshrc.omz
 source ~/.zshrc
 echo '[###### oh-my-zsh installed ######]'
