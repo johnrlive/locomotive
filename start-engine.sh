@@ -52,12 +52,12 @@ gem -v
 echo "[###### Done ######]"
 sleep 1
 
-echo '[###### install vim-config #####]'
+echo '[###### install dotfiles #####]'
 sleep 1
 cd ~
-git clone git://github.com/johnrlive/vim-config-neo.git
-cd vim-config-neo
-rake
+git clone git://github.com/johnrlive/dotfiles.git
+cd dotfiles
+./install.sh
 echo '[###### cloned vim config ######]'
 sleep 1
 
