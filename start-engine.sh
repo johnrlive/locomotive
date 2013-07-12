@@ -58,7 +58,16 @@ cd ~
 git clone git://github.com/johnrlive/dotfiles.git
 cd dotfiles
 ./install.sh
-echo '[###### cloned vim config ######]'
+echo '[###### cloned vim dotfiles ######]'
+sleep 1
+
+echo '[##### install Oh-my-zsh ######]'
+sleep 1
+cd ~
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc.omz
+source ~/.zshrc
+echo '[###### oh-my-zsh installed ######]'
 sleep 1
 
 echo "\n Choo-Choo\n"
