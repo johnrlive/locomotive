@@ -31,6 +31,8 @@ sudo apt-get install -y vim
 sudo apt-get install -y mc
 sudo apt-get install -y tmux
 sudo apt-get install -y zsh
+sudo apt-get install -y wget
+sudo apt-get install -y curl
 echo "[###### Done ######]"
 sleep 1
 
@@ -65,7 +67,8 @@ echo '[##### install Oh-my-zsh ######]'
 sleep 1
 cd ~
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc.omz
+wget https://github.com/johnrlive/dotfiles/blob/master/install/zshrc.zsh-template
+cp ~/zshrc.zsh-template ~/.zshrc.omz
 source ~/.zshrc
 echo '[###### oh-my-zsh installed ######]'
 sleep 1
