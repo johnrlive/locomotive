@@ -30,17 +30,21 @@ sleep 1
 sudo apt-get install -y vim
 sudo apt-get install -y mc
 sudo apt-get install -y tmux
+sudo apt-get install -y zsh
 echo "[###### Done ######]"
 sleep 1
 
-echo '[###### Reloading bash ######]'
+echo '[###### Change Shell to ZSH ######]'
 sleep 1
-. ~/.bash_profile
+source ~/.bash_profile
+chsh -s /bin/zsh
+source ~/.zshrc
 echo "[###### Done ######]"
 sleep 1
 
 echo '[###### Installed #######]'
 sleep 1
+which $SHELL
 rvm -v
 ruby -v
 rails -v
