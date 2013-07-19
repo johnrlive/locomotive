@@ -39,7 +39,7 @@ sleep 1
 echo '[###### Change Shell to ZSH ######]'
 sleep 1
 source ~/.bash_profile
-chsh -s /bin/zsh
+chsh -s `which zsh`
 source ~/.zshrc
 echo "[###### Done ######]"
 sleep 1
