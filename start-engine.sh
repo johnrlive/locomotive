@@ -36,6 +36,16 @@ sudo apt-get install -y curl
 echo "[###### Done ######]"
 sleep 1
 
+echo '[##### install Oh-my-zsh ######]'
+sleep 1
+cd ~
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+wget --no-check-certificate https://github.com/johnrlive/dotfiles/blob/master/install/zshrc.zsh-template
+cp ~/zshrc.zsh-template ~/.zshrc.omz
+source ~/.zshrc
+echo '[###### oh-my-zsh installed ######]'
+sleep 1
+
 echo '[###### Change Shell to ZSH ######]'
 sleep 1
 source ~/.bash_profile
@@ -63,16 +73,4 @@ cd dotfiles
 echo '[###### cloned vim dotfiles ######]'
 sleep 1
 
-echo '[##### install Oh-my-zsh ######]'
-sleep 1
-cd ~
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-wget --no-check-certificate https://github.com/johnrlive/dotfiles/blob/master/install/zshrc.zsh-template
-cp ~/zshrc.zsh-template ~/.zshrc.omz
-source ~/.zshrc
-echo '[###### oh-my-zsh installed ######]'
-sleep 1
-
 echo "\n Choo-Choo\n"
-
-
